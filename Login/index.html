@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Login | Welcome Back</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="../Signup/videos/video3.mp4" type="video/mp4" />
+    </video>
+
+    <div class="wrapper">
+      <form class="sign-form" id="loginForm">
+        <h1 class="heading">Welcome back</h1>
+        <p
+          style="
+            text-align: center;
+            color: var(--text-dim);
+            margin-top: -20px;
+            font-size: 0.9rem;
+          "
+        >
+          Please enter your details
+        </p>
+
+        <div class="input-box">
+          <input type="email" id="email" placeholder="" required autofocus />
+          <label>Email Address</label>
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+
+        <div class="input-box">
+          <input type="password" id="password" placeholder="" required />
+          <label>Password</label>
+          <i class="show-pass fa-solid fa-eye"></i>
+          <i class="hide-pass fa-solid fa-eye-slash" style="display: none"></i>
+        </div>
+
+        <div class="forgot-pass">
+          <a href="#" id="forgotPassword">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">Sign In</button>
+
+        <p class="account-text">
+          Don’t have an account?
+          <a href="../Signup/index.html">Sign up</a>
+        </p>
+      </form>
+    </div>
+    <script src="../theme.js"></script>
+    <script src="script.mjs" type="module"></script>
+  </body>
+</html>
